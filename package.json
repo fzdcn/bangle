@@ -1,0 +1,19 @@
+{
+  "name": "fosi_fis3",
+  "version": "1.0.0",
+  "main": "/static/index.html",
+  "dependencies": {
+    "fis-parser-jdists": "^2.0.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.coding.net/kriss/fosi_fis3.git"
+  },
+  "author": "tome",
+  "license": "ISC",
+  "description": ""
+}

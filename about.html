@@ -1,0 +1,258 @@
+<link rel="import" href="/components/common/header.html?__inline" xmlns="http://www.w3.org/1999/html">
+
+<div id="about-us" class="service-commitment-container bgf5f5f5">
+    <!--首页banner-->
+    <div class="img-wrap">
+        <img src="/static/images/about/about-banner.png">
+    </div>
+    <div class="content-center">
+        <div class="wasteland-cleaning-nav">
+            <ol class="breadcrumb">
+                <li class="font-big">首页</li>
+                <li class="chengnuo">服务承诺</li>
+                <li class="team-intro font-color-3ba712 border-style">团队介绍</li>
+                <li class="contact">联系方式</li>
+            </ol>
+        </div>
+
+        <div class="min-section fl">
+            <div class="card-wrap">
+                <div class="section">
+                    <div class="nursery-caption-wrap">
+                        <div class="about-title font-color-3ba712 f24">
+                            服务团队
+                        </div>
+                        <div class="about-text font-color-979797 f16">
+                            Service Team
+                        </div>
+                        <div class="titleImg">
+                            <img src="/static/images/about/about-liner.png">
+                        </div>
+                    </div>
+                    <div class="about-intro">
+                        <div class="col-xs-5">
+                            <div class="about-bg">
+                                <img src="/static/images/about/personal-list.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="about-team">
+                                <dl>
+                                    <dt class="fl f18 font-color-000">家政团队</dt>
+                                    <dd class="f16 font-color-979797">Housekeeping team</dd>
+                                </dl>
+                            </div>
+                            <div class="about-team-intro clear">
+                                <p class="f14 font-color-666">邦乐家政的保洁阿姨全部以自有为主，目前数量已超500人，月平均递增速度在10%左右，其中三星级阿姨超300人，四星级阿姨超150人，五星级阿姨超100人，每日可服务时长超4000个小时。服务区域已覆盖南京全市。“用心服务好每一位客户”是这个团队的服务之本。</p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="section hide">
+                    <div class="nursery-caption-wrap">
+                        <div class="about-title font-color-3ba712 f24">
+                            联系方式
+                        </div>
+                        <div class="about-text font-color-979797 f16">
+                            Contact Information
+                        </div>
+                        <div class="titleImg">
+                            <img src="/static/images/about/about-liner.png">
+                        </div>
+                    </div>
+                    <div class="about-contact">
+                        <div class="col-xs-3 contact-address">
+                            <div class="textaling address-img"></div>
+                            <div class="textaling address-text">
+                                <h3 class="f12 font-color-979797">地址：Adress</h3>
+                            </div>
+                            <div class="textaling address-detail">
+                                <h2 class="f16 font-color-979797">江苏省南京市雨花台软件大道180号4栋101室</h2>
+                            </div>
+                            <div class="address-liner"></div>
+                        </div>
+                        <div class="col-xs-3 contact-tel">
+                            <div class="textaling tel-img"></div>
+                            <div class="textaling tel-text">
+                                <h3 class="f12 font-color-979797">电话：Tel</h3>
+                            </div>
+                            <div class="textaling tel-detail">
+                                <h2 class="f16 font-color-979797">400-111-8666</br>025-86386618</h2>
+                            </div>
+                            <div class="tel-liner"></div>
+                        </div>
+                        <div class="col-xs-3 contact-email">
+                            <div class="textaling email-img"></div>
+                            <div class="textaling email-text">
+                                <h3 class="f12 font-color-979797">邮箱：Email</h3>
+                            </div>
+                            <div class="textaling email-detail">
+                                <h2 class="f16 font-color-979797">jsfys888@163.com</h2>
+                            </div>
+                            <div class="email-liner"></div>
+                        </div>
+                        <div class="col-xs-3 contact-way">
+                            <div class="textaling way-img"></div>
+                            <div class="textaling qq-text">
+                                <h3 class="f12 font-color-979797">QQ：Way</h3>
+                            </div>
+                            <div class="textaling qq-detail">
+                                <h2 class="f16 font-color-979797">3214795936</br>2496756260</h2>
+                            </div>
+                            <div class="qq-liner"></div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="nursery-caption-wrap">
+                        <div class="about-title font-color-3ba712 f24 textaling">
+                            <img src="/static/images/about/about-map.png" alt="">
+                        </div>
+                        <div class="col-xs-12 about-map">
+                            <div style="width:100%;height:380px;" id="dituContent"></div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="card-footer-wrap">
+                    <div class="card-footer"></div>
+                    <div class="card-footer-img">
+                        <img src="/static/images/cleaning/damuzhi.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--右边内容公共部分-->
+        <link rel="import" href="/components/right-service/rigth-service.html?__inline">
+
+        <div class="clear"></div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el:"#about-us",
+        data:{
+            markerArr:[{
+                title:"苏州创意产业园",
+                content:"苏州创意产业园",
+                point:"120.740383|31.270546",
+                isOpen:0,
+                icon:{w:21,h:21,l:0,t:0,x:6,lb:5}
+            }]
+        },
+        methods:{
+            //关于我们百度地图
+            //标注点数组
+            //创建和初始化地图函数：
+            initMap:function () {
+                this.createMap();//创建地图
+                this.setMapEvent();//设置地图事件
+                this.addMapControl();//向地图添加控件
+                this.addMarker();//向地图中添加marker
+            },
+            //创建地图函数：
+            createMap:function () {
+                var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                var point = new BMap.Point(120.73300,31.274100);//定义一个中心点坐标
+                map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+                window.map = map;//将map变量存储在全局
+            },
+            //地图事件设置函数：
+            setMapEvent:function () {
+                map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                map.enableKeyboard();//启用键盘上下左右键移动地图
+            },
+            //地图控件添加函数
+            addMapControl:function () {
+                //向地图中添加缩放控件
+                var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                map.addControl(ctrl_nav);
+                //向地图中添加缩略图控件
+                var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                map.addControl(ctrl_ove);
+                //向地图中添加比例尺控件
+                var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                map.addControl(ctrl_sca);
+            },
+            //创建marker
+            addMarker:function () {
+                var vm = this;
+                for(var i=0;i<this.markerArr.length;i++){
+                    var json = this.markerArr[i];
+                    var p0 = json.point.split("|")[0];
+                    var p1 = json.point.split("|")[1];
+                    var point = new BMap.Point(p0,p1);
+                    var iconImg = this.createIcon(json.icon);
+                    var marker = new BMap.Marker(point,{icon:iconImg});
+                    var iw = this.createInfoWindow(i);
+                    var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+                    marker.setLabel(label);
+                    map.addOverlay(marker);
+                    label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer",
+                        display:"inline-table",
+                    });
+
+                    (function(){
+                        var index = i;
+                        var _iw = vm.createInfoWindow(i);
+                        var _marker = marker;
+                        _marker.addEventListener("click",function(){
+                            this.openInfoWindow(_iw);
+                        });
+                        _iw.addEventListener("open",function(){
+                            _marker.getLabel().hide();
+                        })
+                        _iw.addEventListener("close",function(){
+                            _marker.getLabel().show();
+                            vm.addMarker();
+                        })
+                        label.addEventListener("click",function(){
+                            _marker.openInfoWindow(_iw);
+                            vm.addMarker();
+                        })
+                        if(!!json.isOpen){
+                            label.hide();
+                            _marker.openInfoWindow(_iw);
+                        }
+                    })()
+                }
+            },
+            //创建InfoWindow
+            createInfoWindow:function (i) {
+                var json = this.markerArr[i];
+                var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+                return iw;
+            },
+            //创建一个Icon
+            createIcon:function (json) {
+                var icon = new BMap.Icon("/static/images/about/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)});
+                return icon;
+            },
+            modifyIcon:function () {
+                $(".BMapLabel").css("display","inline-table");
+            }
+        },
+        mounted:function () {
+            this.initMap();
+        }
+    })
+</script>
+<!--左边客服-->
+<link rel="import" href="/components/consultation/left_consultation.html?__inline">
+
+<!--右边咨询-->
+<link rel="import" href="/components/consultation/rigth_consultation.html?__inline">
+
+<link rel="import" href="/components/common/footer.html?__inline">

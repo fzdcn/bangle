@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/app.css">
+    <script src="/static/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script type="text/javascript" src="/static/js/vue.js"></script>
+</head>
+<body>
+<div class="container-wrap">
+    <!--头部导航栏-->
+    <div class="header-wrap bgfff">
+        <div class="content-center">
+            <div id="logo-wrap" class="logo-wrap">
+                <img v-if="logo_img" src="/static/images/nav/index-logo.png">
+                <img v-else="" src="/static/images/nav/logo.png">
+            </div>
+            <div class="nav-wrap">
+                <ul id="nav" class="nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="maternity.html">月嫂</a></li>
+                    <li><a href="nursery.html">育婴师</a></li>
+                    <li><a href="nanny.html">保姆</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">保洁</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="wasteland-cleaning.html">开荒保洁</a></li>
+                            <li><a href="daily-cleaning.html">日常保洁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="hourly-worker.html">钟点工</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    new Vue({
+        el:"#logo-wrap",
+        data:{
+            logo_img: false,
+        },
+        methods:{
+            logoChange:function () {
+                var url = location.href.toLowerCase();
+                if(url.indexOf("index")>=0){
+                    this.logo_img = true;
+                }else{
+                    this.logo_img = false;
+                }
+            }
+        },
+        mounted: function () {
+            this.logoChange();
+        }
+    })
+</script>
